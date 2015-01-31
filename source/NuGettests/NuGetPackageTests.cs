@@ -5,10 +5,11 @@ using Thinktecture.IdentityServer.Core.Services.Contrib;
 using Xunit;
 using Xunit.Sdk;
 
-namespace Unittests
+namespace NuGettests
 {
-    public class OneLocalizationToRuleThemAllServiceTests
+    public class NuGetPackageTests
     {
+
         [Theory]
         [InlineData("nb-NO")]
         public void ShouldGetLocalizedMessages(string culture)
@@ -106,6 +107,5 @@ namespace Unittests
             ScopeIds.Profile_DisplayName,
             ScopeIds.Roles_DisplayName
         };
-
     }
 }

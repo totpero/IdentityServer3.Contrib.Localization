@@ -3,7 +3,7 @@
   <metadata>
     <id>IdentityServer3.Localization</id>
     <title>Thinktecture IdentityServer3 - Localization</title>
-    <version>$version$</version>
+    <version>0.11.0.0</version>
     <authors>John Korsnes</authors>
     <description>Contrib implementation of ILocalizationService in IdentityServerv3 for multiple languages</description>
     <projectUrl>http://github.com/nrkno/IdentityServer3.Contrib.Localization </projectUrl>
@@ -12,4 +12,8 @@
       Norwegian nb-NO added.
     </releaseNotes>
   </metadata>
+  <files>
+    <file src="bin\Debug\**\*resources.dll"
+          target="lib/net45"/>
+  </files>
 </package>
