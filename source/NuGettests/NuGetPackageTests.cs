@@ -11,6 +11,7 @@ namespace NuGettests
     {
         [Theory]
         [InlineData("nb-NO")]
+        [InlineData("tr-TR")]
         public void ShouldGetLocalizedMessagesUsingNugetLatestNuGetPackage(string culture)
         {
             AssertTranslationExists(culture, _possibleMessageIds, "Messages");
