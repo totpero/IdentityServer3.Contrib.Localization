@@ -9,11 +9,11 @@
     <projectUrl>http://github.com/nrkno/IdentityServer3.Contrib.Localization </projectUrl>
     <iconUrl>http://www.nrk.no/drfront/gfx/nrk-logo-white-72x26.png</iconUrl>
     <releaseNotes>
-      Norwegian nb-NO added.
+      Turkish tr-TR added.
     </releaseNotes>
   </metadata>
   <files>
-    <file src="bin\Debug\**\*resources.dll"
+    <file src="bin\Release\**\*resources.dll"
           target="lib/net45"/>
   </files>
 </package>

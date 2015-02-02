@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,31 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="externalloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn mot ekstern tjeneste</value>
+  <data name="clientidrequired" xml:space="preserve">
+    <value>client_id gereklidir</value>
   </data>
-  <data name="externalloginsuccess" xml:space="preserve">
-    <value>Vellykket innlogging mot ekstern tjeneste</value>
+  <data name="externalprovidererror" xml:space="preserve">
+    <value>Harici kimlik sağlayıcıya oturum açılırken bir hata oluştu. Hata mesajı: {0}</value>
   </data>
-  <data name="localloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn med lokal innlogging</value>
+  <data name="invalidusernameorpassword" xml:space="preserve">
+    <value>Geçersiz kullanıcı adı veya parola</value>
   </data>
-  <data name="localloginsuccess" xml:space="preserve">
-    <value>Vellykket lokal innlogging</value>
+  <data name="invalid_scope" xml:space="preserve">
+    <value>İstemci uygulama yetkisi olmayan bir kaynağa erişmeye çalıştı.</value>
   </data>
-  <data name="logoutevent" xml:space="preserve">
-    <value>Utlogging</value>
+  <data name="missingclientid" xml:space="preserve">
+    <value>client_id eksik</value>
   </data>
-  <data name="partiallogin" xml:space="preserve">
-    <value>Delvis innlogging</value>
+  <data name="missingtoken" xml:space="preserve">
+    <value>Token eksik</value>
   </data>
-  <data name="partiallogincomplete" xml:space="preserve">
-    <value>Delvis innlogging fullført</value>
+  <data name="mustselectatleastonepermission" xml:space="preserve">
+    <value>En az bir izin seçmelisiniz</value>
   </data>
-  <data name="preloginfailure" xml:space="preserve">
-    <value>PreLogin feilet</value>
+  <data name="noexternalprovider" xml:space="preserve">
+    <value>Harici kimlik sağlayıcı belirtilmedi.</value>
   </data>
-  <data name="preloginsuccess" xml:space="preserve">
-    <value>Vellykket PreLogin</value>
+  <data name="nomatchingexternalaccount" xml:space="preserve">
+    <value>Geçersiz Hesap</value>
+  </data>
+  <data name="nosignincookie" xml:space="preserve">
+    <value>Hangi uygulamaya oturum açacağınız belirlenirken hata oluştu. Uygulamaya geri dönerek tekrar deneyin.</value>
+  </data>
+  <data name="nosubjectfromexternalprovider" xml:space="preserve">
+    <value>Harici kimlik sağlayıcı ile kimlik doğrulanırken hata oluştu</value>
+  </data>
+  <data name="passwordrequired" xml:space="preserve">
+    <value>Parola gereklidir</value>
+  </data>
+  <data name="sslrequired" xml:space="preserve">
+    <value>SSL gereklidir</value>
+  </data>
+  <data name="unauthorized_client" xml:space="preserve">
+    <value>İstemci uygulaması bilinmiyor veya yetkili değil.</value>
+  </data>
+  <data name="unexpectederror" xml:space="preserve">
+    <value>Beklenmeyen bir hata oluştu</value>
+  </data>
+  <data name="unsupportedmediatype" xml:space="preserve">
+    <value>Desteklenmeyen Medya Türü</value>
+  </data>
+  <data name="unsupported_response_type" xml:space="preserve">
+    <value>Yetkilendirme sunucusu istenen yanıt türünü desteklemiyor.</value>
+  </data>
+  <data name="usernamerequired" xml:space="preserve">
+    <value>Kullanıcı adı gereklidir</value>
   </data>
 </root>

@@ -10,11 +10,30 @@ Implementation of IdentityServerV3s ILocalizationService
 
 ## Usage
 
+Specific culture:
 ```
    var options = new LocaleOptions { Locale = "nb-NO" };
-   var eventService = new GlobalizedLocalizationService(options);
+   var localizationService = new GlobalizedLocalizationService(options);
 ```
 
+To use IdentityServer3s default provided localization:
+```
+   var localizationService = new GlobalizedLocalizationService();
+```
+
+Pirate culture:
+```
+   var options = new LocaleOptions { Locale = "pirate" }; // ye be warned!
+   var localizationService = new GlobalizedLocalizationService(options);
+```
+
+
+## Supported languages
+ * English (the default provided by the DefaultLocalizationService)
+ * nb-NO (Norwegian Bokmål)
+ * tr-TR (Turkish)
+ * pirate (yarr)
+ 
 ## Install
 
 ```

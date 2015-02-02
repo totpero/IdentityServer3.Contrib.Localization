@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,30 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="externalloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn mot ekstern tjeneste</value>
+    <value>Harici Oturum Başarısız</value>
   </data>
   <data name="externalloginsuccess" xml:space="preserve">
-    <value>Vellykket innlogging mot ekstern tjeneste</value>
+    <value>Harici Oturum Başarılı</value>
   </data>
   <data name="localloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn med lokal innlogging</value>
+    <value>Yerel Oturum Başarısız</value>
   </data>
   <data name="localloginsuccess" xml:space="preserve">
-    <value>Vellykket lokal innlogging</value>
+    <value>Yerel Oturum Başarılı</value>
   </data>
   <data name="logoutevent" xml:space="preserve">
-    <value>Utlogging</value>
+    <value>Oturum Kapatma Eylemi</value>
   </data>
   <data name="partiallogin" xml:space="preserve">
-    <value>Delvis innlogging</value>
+    <value>Kısmi Oturum</value>
   </data>
   <data name="partiallogincomplete" xml:space="preserve">
-    <value>Delvis innlogging fullført</value>
+    <value>Kısmi Oturum Tamamlandı</value>
   </data>
   <data name="preloginfailure" xml:space="preserve">
-    <value>PreLogin feilet</value>
+    <value>Ön Oturum Hatası</value>
   </data>
   <data name="preloginsuccess" xml:space="preserve">
-    <value>Vellykket PreLogin</value>
+    <value>Ön Oturum Başarılı</value>
   </data>
 </root>

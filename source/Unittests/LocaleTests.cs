@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Thinktecture.IdentityServer.Core.Resources;
 using Thinktecture.IdentityServer.Core.Services.Contrib;
@@ -7,24 +8,83 @@ using Xunit.Sdk;
 
 namespace Unittests
 {
-    public class OneLocalizationToRuleThemAllServiceTests
+    public class Translate
     {
         [Theory]
+        [InlineData("pirate")]
         [InlineData("nb-NO")]
+        [InlineData("tr-TR")]
         public void ShouldGetLocalizedMessages(string culture)
         {
             AssertTranslationExists(culture, _possibleMessageIds, "Messages");
             AssertTranslationExists(culture, _possibleEventIds, "Events");
             AssertTranslationExists(culture, _possibleScopeIds, "Scopes");
         }
+
+        /// <summary>
+        /// Bug / invariance in idsrv ids sent to ILocalizationService. Handle it here.
+        /// </summary>
+        /// <param name="culture"></param>
+        [Theory]
+        [InlineData("pirate")]
+        [InlineData("nb-NO")]
+        [InlineData("tr-TR")]
+        public void ShouldGetLocalizedMessagesRegardlessOfCasing(string culture)
+        {
+            var messageidsUppercased = _possibleMessageIds.Select(mid => mid.ToUpper());
+            var eventidsUppercased = _possibleEventIds.Select(mid => mid.ToUpper());
+            var scopeidsUppercased = _possibleScopeIds.Select(mid => mid.ToUpper());
+            AssertTranslationExists(culture, messageidsUppercased, "Messages");
+            AssertTranslationExists(culture, eventidsUppercased, "Events");
+            AssertTranslationExists(culture, scopeidsUppercased, "Scopes");
+        }
         
         [Theory(Skip = "Bug in idsrv default localization service. Enable when fixed")]
         [InlineData("")] // <-- This means using IdentityServers DefaultLocalizationService
+        [InlineData("Default")] // <-- This means using IdentityServers DefaultLocalizationService
         public void ShouldGetIdServersLocalizedMessages(string culture)
         {
             AssertTranslationExists(culture, _possibleMessageIds, "Messages");
             AssertTranslationExists(culture, _possibleEventIds, "Events");
             AssertTranslationExists(culture, _possibleScopeIds, "Scopes");
+        }
+
+        [Fact(Skip = "Bug in idsrv default localization service.Enable when fixed")]
+        public void ShouldUseDefaultLocalizationServiceForNull()
+        {
+            AssertTranslationExists(null, _possibleMessageIds, "Messages");
+            AssertTranslationExists(null, _possibleEventIds, "Events");
+            AssertTranslationExists(null, _possibleScopeIds, "Scopes");
+        }
+
+        [Fact]
+        public void ShouldThrowExceptionForNotFoundLocale()
+        {
+            var options = new LocaleOptions
+            {
+                Locale = "notexisting"
+            };
+            Assert.Throws<ApplicationException>(() => new GlobalizedLocalizationService(options));
+        }
+
+        [Theory]
+        [InlineData("Default")]
+        [InlineData("pirate")]
+        [InlineData("nb-NO")]
+        [InlineData("tr-TR")]
+        public void AvailableLocalesContainsTranslations(string locale)
+        {
+            var localeService = new GlobalizedLocalizationService();
+            var availableLocales = localeService.GetAvailableLocales();
+            Assert.Contains(availableLocales, s => s.Equals(locale));
+        }
+
+        [Fact]
+        public void ShouldHaveCorrectCount()
+        {
+            var localeService = new GlobalizedLocalizationService();
+            var availableLocales = localeService.GetAvailableLocales();
+            Assert.Equal(4, availableLocales.Count());
         }
 
         private static void AssertTranslationExists(string culture, IEnumerable<string> ids, string category)

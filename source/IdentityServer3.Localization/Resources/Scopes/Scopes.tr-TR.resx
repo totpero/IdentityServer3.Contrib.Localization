@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,31 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="externalloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn mot ekstern tjeneste</value>
+  <data name="address_displayname" xml:space="preserve">
+    <value>Posta adresiniz</value>
   </data>
-  <data name="externalloginsuccess" xml:space="preserve">
-    <value>Vellykket innlogging mot ekstern tjeneste</value>
+  <data name="all_claims_displayname" xml:space="preserve">
+    <value>Tüm kullanıcı bilgileri</value>
   </data>
-  <data name="localloginfailure" xml:space="preserve">
-    <value>Kunne ikke logge inn med lokal innlogging</value>
+  <data name="email_displayname" xml:space="preserve">
+    <value>E-posta adresiniz</value>
   </data>
-  <data name="localloginsuccess" xml:space="preserve">
-    <value>Vellykket lokal innlogging</value>
+  <data name="offline_access_displayname" xml:space="preserve">
+    <value>Çevirimdışı erişim</value>
   </data>
-  <data name="logoutevent" xml:space="preserve">
-    <value>Utlogging</value>
+  <data name="openid_displayname" xml:space="preserve">
+    <value>Kullanıcı kimliği</value>
   </data>
-  <data name="partiallogin" xml:space="preserve">
-    <value>Delvis innlogging</value>
+  <data name="phone_displayname" xml:space="preserve">
+    <value>Telefon numaranız</value>
   </data>
-  <data name="partiallogincomplete" xml:space="preserve">
-    <value>Delvis innlogging fullført</value>
+  <data name="profile_description" xml:space="preserve">
+    <value>Kullanıcı profili bilgileriniz (adınız, soyadınız, vb.)</value>
   </data>
-  <data name="preloginfailure" xml:space="preserve">
-    <value>PreLogin feilet</value>
+  <data name="profile_displayname" xml:space="preserve">
+    <value>Kullanıcı Profili</value>
   </data>
-  <data name="preloginsuccess" xml:space="preserve">
-    <value>Vellykket PreLogin</value>
+  <data name="roles_displayname" xml:space="preserve">
+    <value>Kullanıcı Rolleri</value>
   </data>
 </root>
