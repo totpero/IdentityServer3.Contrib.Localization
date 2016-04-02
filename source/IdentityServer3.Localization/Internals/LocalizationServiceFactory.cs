@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using IdentityServer3.Core.Services.Default;
+using System.Collections.Generic;
 using System.Globalization;
-using Thinktecture.IdentityServer.Core.Services.Default;
 
-namespace Thinktecture.IdentityServer.Core.Services.Contrib.Internals
+namespace IdentityServer3.Core.Services.Contrib.Internals
 {
     internal static class LocalizationServiceFactory
     {
@@ -22,6 +22,15 @@ namespace Thinktecture.IdentityServer.Core.Services.Contrib.Internals
             AvailableLocalizationServices.Add(CreateResourceBased(Constants.svSE));
             AvailableLocalizationServices.Add(CreateResourceBased(Constants.trTR));
             AvailableLocalizationServices.Add(CreateResourceBased(Constants.roRO));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.nlNL));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.zhCN));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.daDK));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.ruRU));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.ptBR));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.csCZ));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.plPL));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.itIT));
+            AvailableLocalizationServices.Add(CreateResourceBased(Constants.skSK));
         }
 
         public static ILocalizationService Create(LocaleOptions options)

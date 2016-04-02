@@ -1,7 +1,6 @@
-﻿using Thinktecture.IdentityServer.Core.Events;
-using Thinktecture.IdentityServer.Core.Resources;
+﻿using IdentityServer3.Core.Resources;
 
-namespace Thinktecture.IdentityServer.Core.Services.Contrib.Internals
+namespace IdentityServer3.Core.Services.Contrib.Internals
 {
     internal class PirateLocalizationService : ILocalizationService
     {
@@ -10,11 +9,11 @@ namespace Thinktecture.IdentityServer.Core.Services.Contrib.Internals
             var lowerCased = id;
             switch (category)
             {
-                case Core.Constants.LocalizationCategories.Messages:
+                case IdentityServer3.Core.Constants.LocalizationCategories.Messages:
                     return PirateMessages.GetString(lowerCased);
-                case Core.Constants.LocalizationCategories.Events:
+                case IdentityServer3.Core.Constants.LocalizationCategories.Events:
                     return PirateEvents.GetString(lowerCased);
-                case Core.Constants.LocalizationCategories.Scopes:
+                case IdentityServer3.Core.Constants.LocalizationCategories.Scopes:
                     return PirateScopes.GetString(lowerCased);
             }
             return null;

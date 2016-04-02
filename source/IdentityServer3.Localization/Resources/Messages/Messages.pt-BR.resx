@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+  <data name="ClientIdRequired" xml:space="preserve">
+    <value>Identificador do cliente é necessário</value>
   </data>
-  <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+  <data name="ExternalProviderError" xml:space="preserve">
+    <value>Há um log de erro do provedor externo. A mensagem de erro: {0}</value>
   </data>
-  <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+  <data name="invalid_request" xml:space="preserve">
+    <value>O aplicativo cliente fez um pedido inválido.</value>
   </data>
-  <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+  <data name="invalid_scope" xml:space="preserve">
+    <value>O aplicativo cliente tentou acessar um recurso que não tem acesso.</value>
   </data>
-  <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>Nome de usuário ou senha inválido</value>
   </data>
-  <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+  <data name="MissingClientId" xml:space="preserve">
+    <value>client_id está faltando</value>
   </data>
-  <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+  <data name="MissingToken" xml:space="preserve">
+    <value>O token está faltando</value>
   </data>
-  <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+  <data name="MustSelectAtLeastOnePermission" xml:space="preserve">
+    <value>Deve selecionar pelo menos uma permissão.</value>
   </data>
-  <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+  <data name="NoExternalProvider" xml:space="preserve">
+    <value>O provedor de login externo não foi fornecido.</value>
   </data>
-  <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+  <data name="NoMatchingExternalAccount" xml:space="preserve">
+    <value>Conta inválida</value>
   </data>
-  <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+  <data name="NoSignInCookie" xml:space="preserve">
+    <value>Há um erro ao determinar qual aplicativo você está assinando. Retorne para o aplicativo e tente novamente.</value>
   </data>
-  <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+  <data name="NoSubjectFromExternalProvider" xml:space="preserve">
+    <value>Erro de autenticação com o provedor externo</value>
   </data>
-  <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Senha é necessária</value>
   </data>
-  <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+  <data name="SslRequired" xml:space="preserve">
+    <value>SSL é necessário</value>
+  </data>
+  <data name="unauthorized_client" xml:space="preserve">
+    <value>O aplicativo cliente não é conhecido ou não está autorizado.</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Ocorreu um erro inesperado</value>
+  </data>
+  <data name="unsupported_response_type" xml:space="preserve">
+    <value>O servidor de autorização não suporta o tipo de resposta requerida.</value>
+  </data>
+  <data name="UnsupportedMediaType" xml:space="preserve">
+    <value>Tipo de mídia (Media Type) não suportado</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>Nome de usuário é necessária</value>
   </data>
 </root>

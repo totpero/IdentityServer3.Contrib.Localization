@@ -118,45 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+    <value>Oprávnění klienta odejmuta</value>
+    <comment>Client Permissions Revoked</comment>
   </data>
   <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+    <value>Content Security Policy (CSP) Report</value>
+    <comment>Content Security Policy (CSP) Report</comment>
   </data>
   <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+    <value>Chyba při externím přihlášení</value>
+    <comment>External Login Error</comment>
   </data>
   <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+    <value>Selhání při externím přihlášení</value>
+    <comment>External Login Failure</comment>
   </data>
   <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+    <value>Úspěšné externí přihlášení</value>
+    <comment>External Login Success</comment>
   </data>
   <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+    <value>Selhání při lokálním přihlášení</value>
+    <comment>Local Login Failure</comment>
   </data>
   <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+    <value>Úspěšné lokální přihlášení</value>
+    <comment>Local Login Success</comment>
   </data>
   <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+    <value>Událost odhlášení</value>
+    <comment>Logout Event</comment>
   </data>
   <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+    <value>Částečné přihlášení</value>
+    <comment>Partial Login</comment>
   </data>
   <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+    <value>Částečné přihlášení dokončeno</value>
+    <comment>Partial Login Complete</comment>
   </data>
   <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+    <value>Selhání při před-přihlášení</value>
+    <comment>Pre-Login Failure</comment>
   </data>
   <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+    <value>Úspěšné před-přihlášení</value>
+    <comment>Pre-Login Success</comment>
   </data>
   <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+    <value>Selhání při přihlášení toku "Resource Owner Password"</value>
+    <comment>Resource Owner Password Flow Login Failure</comment>
   </data>
   <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+    <value>Úspěšné přihlášení toku "Resource Owner Password"</value>
+    <comment>Resource Owner Password Flow Login Success</comment>
   </data>
 </root>

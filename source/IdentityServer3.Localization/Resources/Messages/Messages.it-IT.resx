@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+  <data name="ClientIdRequired" xml:space="preserve">
+    <value>È richiesto l'identificativo del client</value>
   </data>
-  <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+  <data name="ExternalProviderError" xml:space="preserve">
+    <value>Si è verificato un errore durante il login tramite il fornitore esterno. Il messaggio di errore è: {0}</value>
   </data>
-  <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>Nome utente o password non corretti.</value>
   </data>
-  <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+  <data name="invalid_request" xml:space="preserve">
+    <value>L'applicazione client ha effettuato una richiesta non valida.</value>
   </data>
-  <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+  <data name="invalid_scope" xml:space="preserve">
+    <value>L'applicazione client ha tentato di accedere ad una risorsa per la quale non possiede i permessi di accesso.</value>
   </data>
-  <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+  <data name="MissingClientId" xml:space="preserve">
+    <value>client_id mancante</value>
   </data>
-  <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+  <data name="MissingToken" xml:space="preserve">
+    <value>Token mancante</value>
   </data>
-  <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+  <data name="MustSelectAtLeastOnePermission" xml:space="preserve">
+    <value>È necessario selezionare almeno un permesso.</value>
   </data>
-  <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+  <data name="NoExternalProvider" xml:space="preserve">
+    <value>Non è stato fornito il fornitore del login esterno.</value>
   </data>
-  <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+  <data name="NoMatchingExternalAccount" xml:space="preserve">
+    <value>Account Non Valido</value>
   </data>
-  <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+  <data name="NoSignInCookie" xml:space="preserve">
+    <value>Si è verificato un errore durante la determinazione dell'applicazione per la quale si sta effettuando l'accesso. Fai ritorno all'applicazione e tenta di nuovo.</value>
   </data>
-  <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+  <data name="NoSubjectFromExternalProvider" xml:space="preserve">
+    <value>Errore durante l'autenticazione tramite il fornitore esterno</value>
   </data>
-  <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>La password è richiesta</value>
   </data>
-  <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+  <data name="SslRequired" xml:space="preserve">
+    <value>È richiesto l'uso di SSL</value>
+  </data>
+  <data name="unauthorized_client" xml:space="preserve">
+    <value>L'applicazione client è sconosciuta o non è autorizzata.</value>
+  </data>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Si è verificato un errore inatteso.</value>
+  </data>
+  <data name="UnsupportedMediaType" xml:space="preserve">
+    <value>Media Type non supportato</value>
+  </data>
+  <data name="unsupported_response_type" xml:space="preserve">
+    <value>Il server di autorizzazione non supporta il tipo di risposta richiesta.</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>Il nome utente è richiesto</value>
   </data>
 </root>

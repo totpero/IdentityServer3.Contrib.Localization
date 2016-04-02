@@ -117,46 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+  <data name="ClientIdRequired" xml:space="preserve">
+    <value>Je vyžadovaný identifikátor klienta</value>
   </data>
-  <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>Neplatné používateľské meno a heslo</value>
   </data>
-  <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+  <data name="invalid_scope" xml:space="preserve">
+    <value>Klientska aplikácia sa pokúsila pristúpiť k zdroju, ku ktorému nemá prístup.</value>
   </data>
-  <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+  <data name="MissingClientId" xml:space="preserve">
+    <value>Chýba client_id</value>
   </data>
-  <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+  <data name="MissingToken" xml:space="preserve">
+    <value>Chýba Token</value>
   </data>
-  <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+  <data name="MustSelectAtLeastOnePermission" xml:space="preserve">
+    <value>Je potrebné zvoliť aspoň jedno oprávnenie.</value>
   </data>
-  <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+  <data name="NoMatchingExternalAccount" xml:space="preserve">
+    <value>Neplatný učet</value>
   </data>
-  <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+  <data name="NoSubjectFromExternalProvider" xml:space="preserve">
+    <value>Chyba pri overení prostredníctvom externého poskytovateľa</value>
   </data>
-  <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Heslo je vyžadované</value>
   </data>
-  <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+  <data name="SslRequired" xml:space="preserve">
+    <value>Je vyžadované SSL</value>
   </data>
-  <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+  <data name="unauthorized_client" xml:space="preserve">
+    <value>Klientska aplikácia nebola rozpoznaná alebo nie je autorizovaná.</value>
   </data>
-  <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+  <data name="UnexpectedError" xml:space="preserve">
+    <value>Došlo k neočakávanej chybe</value>
   </data>
-  <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+  <data name="UnsupportedMediaType" xml:space="preserve">
+    <value>Nepodporovaný Media Type</value>
   </data>
-  <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+  <data name="unsupported_response_type" xml:space="preserve">
+    <value>Autorizačný server neposkytuje požadovaný typ odpovede.</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>Užívateľské meno je vyžadované</value>
+  </data>
+  <data name="NoSignInCookie" xml:space="preserve">
+    <value>Došlo k chybe pri určení, ku ktorej aplikácii sa chcete prihlásiť. Vráťte sa do aplikácie a pokus zopakujte.</value>
+  </data>
+  <data name="NoExternalProvider" xml:space="preserve">
+    <value>Poskytovateľ externého prihlásenie nebol uvedený.</value>
+  </data>
+  <data name="ExternalProviderError" xml:space="preserve">
+    <value>Došlo k chybe pri prihlasovaní prostredníctvom externého poskytovateľa. Chybové hlásenie je: {0}</value>
+  </data>
+  <data name="invalid_request" xml:space="preserve">
+    <value>Klientska aplikácia urobila neplatnou požiadavku.</value>
   </data>
 </root>

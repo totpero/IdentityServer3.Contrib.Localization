@@ -118,45 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+    <value>Полномочия клиента отозваны</value>
   </data>
   <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+    <value>Отчет Content Security Policy (CSP)</value>
   </data>
   <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+    <value>Ошибка внешней авторизации</value>
   </data>
   <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+    <value>Отказ внешней авторизации</value>
   </data>
   <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+    <value>Успех внешней авторизации</value>
   </data>
   <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+    <value>Отказ локальной авторизации</value>
   </data>
   <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+    <value>Успех локальной авторизации</value>
   </data>
   <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+    <value>Событие выхода</value>
   </data>
   <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+    <value>Частичный вход</value>
   </data>
   <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+    <value>Частичный вход завершен</value>
   </data>
   <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+    <value>Отказ предварительнойго входа</value>
   </data>
   <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+    <value>Успех предварительного входа</value>
   </data>
   <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+    <value>Отказ Resource Owner Password Flow авторизации</value>
   </data>
   <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+    <value>Успех Resource Owner Password Flow авторизации</value>
   </data>
 </root>

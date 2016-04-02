@@ -118,45 +118,45 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+    <value>Permissões de cliente revogadas</value>
   </data>
   <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+    <value>Relatório de política de segurança de conteúdo (CSP)</value>
   </data>
   <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+    <value>Erro no login externo</value>
   </data>
   <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+    <value>Falha no login externo</value>
   </data>
   <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+    <value>Sucesso no login externo</value>
   </data>
   <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+    <value>Falha no logon local</value>
   </data>
   <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+    <value>Sucesso de logon local</value>
   </data>
   <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+    <value>Evento de logout</value>
   </data>
   <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
+    <value>Login Parcial</value>
   </data>
   <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
+    <value>Login Parcial completo</value>
   </data>
   <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
+    <value>Falha no Pré-Login</value>
   </data>
   <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
+    <value>Sucesso no Pré-Login</value>
   </data>
   <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
+    <value>Falha de logon com fluxo de recurso proprietário e senha </value>
   </data>
   <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+    <value>Sucesso no login com fluxo de recurso proprietário e senha </value>
   </data>
 </root>

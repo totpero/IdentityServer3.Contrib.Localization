@@ -1,14 +1,14 @@
-﻿using System;
+﻿using FakeItEasy;
+using IdentityServer3.Core.Resources;
+using IdentityServer3.Core.Services;
+using IdentityServer3.Core.Services.Contrib;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using FakeItEasy;
-using Thinktecture.IdentityServer.Core.Resources;
-using Thinktecture.IdentityServer.Core.Services;
-using Thinktecture.IdentityServer.Core.Services.Contrib;
 using Xunit;
 using Xunit.Sdk;
-using IdSrvConstants = Thinktecture.IdentityServer.Core.Constants.LocalizationCategories;
+using IdSrvConstants = IdentityServer3.Core.Constants.LocalizationCategories;
 
 namespace Unittests
 {
@@ -56,7 +56,6 @@ namespace Unittests
             };
             Assert.Throws<ApplicationException>(() => new GlobalizedLocalizationService(options));
         }
-
     
         private static void AssertTranslationExists(string culture, IEnumerable<string> ids, string category)
         {

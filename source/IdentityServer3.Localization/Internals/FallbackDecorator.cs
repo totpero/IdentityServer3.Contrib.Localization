@@ -1,6 +1,6 @@
-﻿using Thinktecture.IdentityServer.Core.Services.Default;
+﻿using IdentityServer3.Core.Services.Default;
 
-namespace Thinktecture.IdentityServer.Core.Services.Contrib.Internals
+namespace IdentityServer3.Core.Services.Contrib.Internals
 {
     internal class FallbackDecorator : ILocalizationService
     {

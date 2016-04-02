@@ -1,5 +1,5 @@
 using System.Linq;
-using Thinktecture.IdentityServer.Core.Services.Contrib;
+using IdentityServer3.Core.Services.Contrib;
 using Xunit;
 
 namespace Unittests
@@ -16,6 +16,15 @@ namespace Unittests
         [InlineData("sv-SE")]
         [InlineData("tr-TR")]
         [InlineData("ro-RO")]
+        [InlineData("nl-NL")]
+        [InlineData("zh-CN")]
+        [InlineData("da-DK")]
+        [InlineData("ru-RU")]
+        [InlineData("pt-BR")]
+        [InlineData("cs-CZ")]
+        [InlineData("it-IT")]
+        [InlineData("pl-PL")]
+        [InlineData("sk-SK")]
         public void ContainsLocales(string locale)
         {
             Assert.Contains(GlobalizedLocalizationService.GetAvailableLocales(), s => s.Equals(locale));
@@ -24,7 +33,7 @@ namespace Unittests
         [Fact]
         public void HasCorrectCount()
         {
-            Assert.Equal(8, GlobalizedLocalizationService.GetAvailableLocales().Count());
+            Assert.Equal(18, GlobalizedLocalizationService.GetAvailableLocales().Count());
         }
     }
 }

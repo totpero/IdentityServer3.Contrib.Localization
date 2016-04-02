@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="IdentityServer3, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IdentityServer3.2.0.1\lib\net45\IdentityServer3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Owin">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
@@ -43,10 +47,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Thinktecture.IdentityServer3, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Thinktecture.IdentityServer3.1.1.0\lib\net45\Thinktecture.IdentityServer3.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
@@ -81,10 +81,23 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Events\Events.pl-PL.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.cs-CZ.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.it-IT.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.pt-BR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Events\Events.ru-RU.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.sk-SK.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.nl-NL.resx" />
     <EmbeddedResource Include="Resources\Events\Events.fr-FR.resx" />
     <EmbeddedResource Include="Resources\Events\Events.de-DE.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.da-DK.resx" />
     <EmbeddedResource Include="Resources\Events\Events.nb-NO.resx" />
-    <EmbeddedResource Include="Resources\Events\Events.ro-RO.resx" />
+    <EmbeddedResource Include="Resources\Events\Events.ro-RO.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Events\Events.sv-SE.resx" />
     <EmbeddedResource Include="Resources\Events\Events.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,9 +105,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Events\Events.tr-TR.resx" />
     <EmbeddedResource Include="Resources\Events\Events.es-AR.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.pl-PL.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.cs-CZ.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.it-IT.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.ru-Ru.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.sk-SK.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.nl-NL.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.fr-FR.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.es-AR.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.de-DE.resx" />
+    <EmbeddedResource Include="Resources\Messages\Messages.da-DK.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.nb-NO.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.ro-RO.resx" />
     <EmbeddedResource Include="Resources\Messages\Messages.sv-SE.resx" />
@@ -103,9 +125,18 @@
       <LastGenOutput>Messages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Messages\Messages.tr-TR.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.pl-PL.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.cs-CZ.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.it-IT.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.pt-BR.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.ru-RU.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.sk-SK.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.zh-CN.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.nl-NL.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.fr-FR.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.es-AR.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.de-DE.resx" />
+    <EmbeddedResource Include="Resources\Scopes\Scopes.da-DK.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.nb-NO.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.ro-RO.resx" />
     <EmbeddedResource Include="Resources\Scopes\Scopes.sv-SE.resx" />
@@ -116,6 +147,11 @@
     <EmbeddedResource Include="Resources\Scopes\Scopes.tr-TR.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\OctoPack.3.0.43\tools\OctoPack.targets" Condition="Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets')" />
+  <Target Name="EnsureOctoPackImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackImported)' == ''">
+    <Error Condition="!Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="You are trying to build with OctoPack, but the NuGet targets file that OctoPack depends on is not available on this computer. This is probably because the OctoPack package has not been committed to source control, or NuGet Package Restore is not enabled. Please enable NuGet Package Restore to download them. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\OctoPack.3.0.43\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="OctoPack cannot be run because NuGet packages were restored prior to the build running, and the targets file was unavailable when the build started. Please build the project again to include these packages in the build. You may also need to make sure that your build server does not delete packages prior to each build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

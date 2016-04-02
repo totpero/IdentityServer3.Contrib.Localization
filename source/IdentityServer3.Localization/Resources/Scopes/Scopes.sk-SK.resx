@@ -117,46 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ClientPermissionsRevoked" xml:space="preserve">
-    <value>Klientbehörighet Återkallad</value>
+  <data name="address_DisplayName" xml:space="preserve">
+    <value>Vaša poštová adresa</value>
   </data>
-  <data name="CspReport" xml:space="preserve">
-    <value>Content Security Policy (CSP) Rapport</value>
+  <data name="all_claims_DisplayName" xml:space="preserve">
+    <value>Všetky informácie o užívateľovi</value>
   </data>
-  <data name="ExternalLoginError" xml:space="preserve">
-    <value>Externt Inloggningsfel</value>
+  <data name="email_DisplayName" xml:space="preserve">
+    <value>Vaša emailová adresa</value>
   </data>
-  <data name="ExternalLoginFailure" xml:space="preserve">
-    <value>Fel vid Extern Inloggning</value>
+  <data name="offline_access_DisplayName" xml:space="preserve">
+    <value>Offline prístup</value>
   </data>
-  <data name="ExternalLoginSuccess" xml:space="preserve">
-    <value>Extern Inlogging Lyckades</value>
+  <data name="openid_DisplayName" xml:space="preserve">
+    <value>Identifikátor užívateľa</value>
   </data>
-  <data name="LocalLoginFailure" xml:space="preserve">
-    <value>Fel vid Lokal Inloggning</value>
+  <data name="phone_DisplayName" xml:space="preserve">
+    <value>Vaše telefónne číslo</value>
   </data>
-  <data name="LocalLoginSuccess" xml:space="preserve">
-    <value>Lokal Inlogging Lyckades</value>
+  <data name="profile_Description" xml:space="preserve">
+    <value>Osobné údaje (meno, priezvisko, atď.)</value>
   </data>
-  <data name="LogoutEvent" xml:space="preserve">
-    <value>Utloggning</value>
+  <data name="profile_DisplayName" xml:space="preserve">
+    <value>Profil užívateľa</value>
   </data>
-  <data name="PartialLogin" xml:space="preserve">
-    <value>Del-inloggning</value>
-  </data>
-  <data name="PartialLoginComplete" xml:space="preserve">
-    <value>Del-inloggning fullföljd</value>
-  </data>
-  <data name="PreLoginFailure" xml:space="preserve">
-    <value>Pre-inloggning Misslyckades </value>
-  </data>
-  <data name="PreLoginSuccess" xml:space="preserve">
-    <value>Pre-inloggning Lyckades</value>
-  </data>
-  <data name="ResourceOwnerFlowLoginFailure" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Misslyckades</value>
-  </data>
-  <data name="ResourceOwnerFlowLoginSuccess" xml:space="preserve">
-    <value>Resource Owner Password Flow Inloggning Lyckades</value>
+  <data name="roles_DisplayName" xml:space="preserve">
+    <value>Užívateľské role</value>
   </data>
 </root>
